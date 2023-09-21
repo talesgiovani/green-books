@@ -1,0 +1,40 @@
+.cabecalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+}
+
+.cabecalho {
+    background-color: var(--verde);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /*tem que ser diferente de static para permitir o deslocamento da .lista-menu - elemento filho*/
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute; /*posição vai ser de acordo com o elemento pai - cabecalho*/
+    top: 100%; /*100% para baixo do cabeçalho*/
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}

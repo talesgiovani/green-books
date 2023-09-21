@@ -1,5 +1,8 @@
+@import url(styles/header.css);
+
 :root {
     --cor-de-fundo:#00FFA3;
+    --verde: #2AE832;
 }
 
 body {
