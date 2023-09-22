@@ -33,8 +33,27 @@
     display: none;
     position: absolute; /*posição vai ser de acordo com o elemento pai - cabecalho*/
     top: 100%; /*100% para baixo do cabeçalho*/
+    width: 60vw;
 }
 
 .container__botao:checked ~ .lista-menu {
     display: block;
+}
+
+.lista-menu__titulo, 
+.lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo {
+    color: var(--verde);
+}
+
+.lista-menu__link {
+    background: var(--verde-degrade);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
