@@ -5,12 +5,13 @@
     --verde: #2AE832;
     --branco: #fff;
     --verde-degrade: linear-gradient(97.54deg, #00520e 35.49%, #3c8932 165.37%);
+    --fonte-principal: "Poppins";
 }
 
 body {
     background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }   
 
-h1 {
-    background-color: #fff;
-}
