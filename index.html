@@ -38,11 +38,39 @@
                     <a href="#" class="lista-menu__link">Design & UX</a>
                 </li>
             </ul>
-            <img src="./img/Logo.svg" alt="Logo do Green Books" id="logo">
+            <img src="./img/Logo.svg" alt="Logo do Green Books" id="logo" class="logo-reduzido">
+            <img src="./img/Logo expandido.svg" alt="Logo do Green Books" class="logo-expandido">
         </div>
 
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <label for="opcoes-menu">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design & UX</a>
+                </li>
+            </ul>
+            
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Minha estante</a></li>
+        </ul>
+
         <div class="container">
-            <a href="#"><img src="./img/Favoritos.svg" alt="Meus Favoritos" class="container__imagem"></a>
+            <a href="#"><img src="./img/Favoritos.svg" alt="Meus Favoritos" class="container__imagem container__imagem-transparente"></a>
             <a href="#"><img src="./img/Sacola.svg" alt="Carrinho de Compras" class="container__imagem"></a>
             <a href="#"><img src="./img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
         </div>
@@ -80,6 +108,8 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
 
+        </section>
+
             <div class="card">
                 <!--1° linha-->
                 <div class="card__descricao">
@@ -105,7 +135,7 @@
                 </div>
             </div>
 
-    </section>
+   
 
     <section class="carrossel">
         <h2 class="carrossel__titulo">Mais vendidos</h2>
@@ -131,6 +161,8 @@
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+
+        </section>
 
             <div class="card">
                 <!--1° linha-->
@@ -189,8 +221,10 @@
             </section>
 
             <section class="contato">
-                <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-                <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+                <div class="contato__descricao">
+                    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+                    <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+                </div>
                 <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
             </section>
 
@@ -200,7 +234,6 @@
                 <h2 class="rodape__titulo">Tales Giovani</h2>
             </footer>
 
-    </section>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>

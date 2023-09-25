@@ -12,6 +12,10 @@
     height: 70px;
 }
 
+.logo-expandido {
+    display: none;
+}
+
 .cabecalho {
     background-color: var(--verde);
     display: flex;
@@ -34,6 +38,7 @@
     position: absolute; /*posição vai ser de acordo com o elemento pai - cabecalho*/
     top: 100%; /*100% para baixo do cabeçalho*/
     width: 60vw;
+    z-index: 9999; /*resolve a sobreposição quanto maior o valor "mais para cima*/
 }
 
 .container__botao:checked ~ .lista-menu {
@@ -61,4 +66,54 @@
 
 .container__botao {
     display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .logo-reduzido {
+        display: none;
+    }
+
+    .logo-expandido {
+        display: flex;
+        margin: -3.5em 0;
+        object-fit: contain;
+        width: 200px;
+        height: 200px;
+        padding-left: 1.5em;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__item {
+        padding: 1em;
+        text-transform: uppercase;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__imagem-transparente {
+        display: none;
+    }
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .opcoes__botao:checked ~ .lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
 }
